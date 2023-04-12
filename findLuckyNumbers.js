@@ -1,9 +1,10 @@
 // Write your code below this line.
 
 const luckyNumbers = (total) => {
-    const res = []
-    for (let i = 1; i <= total; i++) {
-        res.push(Math.floor((Math.random() * 10) + 1))
+    let res = []
+    while (res.length < total)  {
+        let random = Math.floor((Math.random() * 10) + 1)
+        if (!res.includes(random)) res.push(random)
     }
     return res
 }
