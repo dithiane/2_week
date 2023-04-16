@@ -27,9 +27,8 @@ isPalindrom("racecar")
 // returns true */
 // Write your code below 
 
-const isPalindrom = (word) => {
-    return [...word.trim()].reverse().join("") === word.trim() 
-}
+const isPalindrom = (word) => [...word.trim()].reverse().join("") === word.trim() 
+
 console.log(isPalindrom("a"))
 console.log(isPalindrom("noon"))
 console.log(isPalindrom("hello"))

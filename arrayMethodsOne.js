@@ -110,7 +110,7 @@ const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax
 // CODE HERE
 console.log("````````````````````````````````````````````````````````````````````````````````````````Problem_5")
 
-const ordersTotal = orders.map(order => order["price"]*(1 + order["tax"].toFixed(2)))
+const ordersTotal = orders.map(order => order["price"]*(1 + order["tax"]).toFixed(2))
 console.log(ordersTotal)
 
 ////////// PROBLEM 6 //////////
